@@ -1,0 +1,54 @@
+
+body {
+    font-size: var(--font-3);
+  }
+  
+  header {
+    background: var(--red);
+    color: var(--white);
+    padding: var(--spacing-6) var(--spacing-0) var(--spacing-6);
+    text-align: center;
+  }
+  
+  .banner {
+    position: absolute;
+    top: -10px;
+    left: var(--spacing-4);
+  }
+  
+  .banner img {
+    height: 80px;
+  }
+  
+  .banner:hover img {
+    animation: wave-flag 0.5s linear infinite alternate;
+  }
+  
+  
+  @keyframes wave-flag {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-5deg);
+    }
+  }
+  
+  header > p, header > p > a{
+    color: var(--white)!important;
+  }
+  
+  .container {
+    margin: var(--spacing-4) auto;
+  }
+  
+  
+  .title {
+    margin-bottom: var(--spacing-4);
+  }
+  
+  .tiny-img {
+    width: 70%;
+    height: 70%;
+    border-radius: 1rem;
+  }
